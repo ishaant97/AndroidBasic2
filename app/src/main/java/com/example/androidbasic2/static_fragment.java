@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 
 public class static_fragment extends Fragment {
-    @Override
-    public View onCreateView(LayoutInflater, ViewGroup container, Bundle savedInstanceState){
-        return inflater.inflate(R.layout.static_fragment, container, false);
-    }
+//    @Override
+//    public View onCreate(LayoutInflater, ViewGroup container, Bundle savedInstanceState){
+//        return inflater.inflate(R.layout.static_fragment, container, false);
+//    }
 }
