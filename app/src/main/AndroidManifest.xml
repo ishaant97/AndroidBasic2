@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AndroidBasic2"
         tools:targetApi="31">
         <activity
+            android:name=".footer"
+            android:exported="false" />
+        <activity
+            android:name=".progressBar"
+            android:exported="true" />
+        <activity
             android:name=".splashScreen"
             android:exported="true" />
         <activity
