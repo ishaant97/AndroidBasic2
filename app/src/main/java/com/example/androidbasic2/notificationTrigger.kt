@@ -23,6 +23,7 @@ class notificationTrigger : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 //        enableEdgeToEdge()
         setContentView(R.layout.activity_notification_trigger)
+        createNotification()
 
         val btn = findViewById<Button>(R.id.btn)
         btn.setOnClickListener {
@@ -30,19 +31,19 @@ class notificationTrigger : AppCompatActivity() {
         }
     }
 
-//    private fun createNotification(){
-//        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-//            val name = "Android Developer"
-//            val descriptionText = "Click Here"
-//            val importance = NotificationManager.IMPORTANCE_DEFAULT
-//            val channel = NotificationChannel(channelid, name, importance).apply {
-//                description = descriptionText
-//            }
-//            val notificationManager : NotificationManager =
-//                getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-//            notificationManager.createNotificationChannel(channel)
-//        }
-//    }
+    private fun createNotification(){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            val name = "Android Developer"
+            val descriptionText = "Click Here"
+            val importance = NotificationManager.IMPORTANCE_DEFAULT
+            val channel = NotificationChannel(channelid, name, importance).apply {
+                description = descriptionText
+            }
+            val notificationManager : NotificationManager =
+                getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            notificationManager.createNotificationChannel(channel)
+        }
+    }
 
     private fun showNotification(){
         val intent = Intent(this,MainActivity::class.java)
@@ -57,6 +58,7 @@ class notificationTrigger : AppCompatActivity() {
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setContentIntent(pendingIntent)
             .setAutoCancel(true)
+
         with(NotificationManagerCompat.from(this)){
             if(ActivityCompat.checkSelfPermission(
                 applicationContext,
