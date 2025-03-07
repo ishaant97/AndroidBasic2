@@ -37,7 +37,6 @@ class AlarmManager : AppCompatActivity() {
     private fun setAlarm(delay: Int) {
         val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
-        // ✅ Correct Intent Target (Fix: Use AlarmReceiver instead of AlarmManager)
         val intent = Intent(this, AlarmReceiver::class.java)
 
         val pendingIntent = PendingIntent.getBroadcast(
