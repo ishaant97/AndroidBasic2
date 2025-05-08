@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".Unit3.DynamicFragment">
+    android:layout_height="match_parent">
 
-    <fragment
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/fragment1"
-        android:name="com.example.androidbasic2.Unit3.Unit3Franment1"
+        android:text="Profile Fragment"
+        android:textSize="36sp"
         />
-
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Fragment"
-        android:textSize="28sp"
+        android:src="@drawable/random_img_1"
         />
+
 </LinearLayout>

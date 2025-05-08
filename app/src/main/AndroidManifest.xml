@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -17,6 +19,31 @@
         android:theme="@style/Theme.AndroidBasic2"
         tools:targetApi="31">
         <activity
+            android:name=".Unit6.navigatorDemo"
+            android:exported="true" />
+
+        <activity
+            android:name=".endTermPractice.Question3"
+            android:exported="true" />
+        <activity
+            android:name=".Unit6.SwipeView"
+            android:exported="true" />
+        <activity
+            android:name=".endTermPractice.SplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".endTermPractice.Question2"
+            android:exported="true" />
+        <activity
+            android:name=".endTermPractice.Question1"
+            android:exported="true" />
+        <activity
+            android:name=".Unit4.ExternalDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Unit4.ExternalStorage"
+            android:exported="false" />
+        <activity
             android:name=".Unit4.InteralStorage2"
             android:exported="false" />
         <activity
@@ -24,10 +51,7 @@
             android:exported="true" />
         <activity
             android:name=".Unit3.DynamicFragment"
-            android:exported="false" />
-        <activity
-            android:name=".Unit3.StaticHoliFrag"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".AlarmManager"
             android:exported="true" />

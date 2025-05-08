@@ -4,22 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center"
-    tools:context=".Unit3.DynamicFragment">
-
-    <fragment
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fragment1"
-        android:name="com.example.androidbasic2.Unit3.Unit3Franment1"
-        />
+    tools:context=".endTermPractice.Question3">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Change Fragment"
-        android:textSize="28sp"
+        android:text="Schedule Alarm For Upcoming Class"
+        android:id="@+id/alarmBtn"
         />
+
 </LinearLayout>

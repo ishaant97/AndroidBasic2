@@ -5,19 +5,19 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="AlarmManager">
+      <SelectionState runConfigName="SwipeView">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="ratingBar">
+      <SelectionState runConfigName="DynamicFragment">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="splashScreen">
+      <SelectionState runConfigName="Question1">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="progressBar">
+      <SelectionState runConfigName="SplashScreen">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="InternalStorage">
+      <SelectionState runConfigName="Question3">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".endTermPractice.Question2">
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:id="@+id/movie1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie 1"
+            />
+        <RadioButton
+            android:id="@+id/movie2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie 2"
+            />
+        <RadioButton
+            android:id="@+id/movie3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie 3"
+            />
+        <RadioButton
+            android:id="@+id/movie4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movie 4"
+            />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitBtn"
+        />
+</LinearLayout>
